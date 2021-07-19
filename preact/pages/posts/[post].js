@@ -2,11 +2,16 @@ import React from 'react'
 import styles from '../../src/styles/blog.module.css'
 import posts from '../../src/config/posts.json'
 import { useRouter } from 'next/router'
-import db from '../../src/firebase/firebaseInit'
+import firebase from 'firebase'
+import dynamic from 'next/dynamic'
+const db = firebase.database()
 
-export default async function() {
+export default function Post() {
     let router = useRouter()
     let post = posts.find(x => x.url == router.query.post)
+    // const aa = dynamic(() =>
+    //     db.ref("Teste").once("value").then((value) => value.val())
+    // )
     return (
         <main>
             <div className={styles["page-content"]}>
@@ -20,7 +25,7 @@ export default async function() {
                                 { post.author }
                             </a>
                         </h5>
-                        <p>24 de Abril de 2021 às 22:17</p>
+                        <p><aa /></p>
                     </div>
                 </div>
 
