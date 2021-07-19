@@ -1,4 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import firebase from '../src/firebase/firebaseInit'
+firebase()
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,6 +13,24 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #191970;
+  }
+  body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #16131B;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #A020F0;
+    /*outline: 1px solid slategrey;*/
+    border-radius: 0.5em;
+  }
+  a {
+    text-decoration: none;
   }
 `
 
