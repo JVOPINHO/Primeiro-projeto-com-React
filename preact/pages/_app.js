@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: #191970;
+    background-color: #1e1e22;
   }
   body::-webkit-scrollbar {
     width: 0.5em;
