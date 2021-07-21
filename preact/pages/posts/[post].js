@@ -32,6 +32,9 @@ export default function Post() {
                     <br />
                     <h2>Teste</h2>
                     <br />
+
+                    <img class="assets" src="https://media.discordapp.net/attachments/782988962444214312/866838946172239882/unknown.png" alt="" />
+                    <p>Esta é a <code>API</code> do senhor Weariful</p>
                 </div>
             </div>
         </main>

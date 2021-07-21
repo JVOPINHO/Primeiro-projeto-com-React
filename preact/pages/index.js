@@ -19,7 +19,7 @@ class Home extends React.Component {
               return (
                 <div className={styles["featured-article"]} onClick={
                   function redirect() {
-                    return window.location = "https://youtube.com/"
+                    return window.location = `/posts/${x.url}`
                   }
                 }>
                   <div className={styles["featured-article-image"]} style={{backgroundImage: "url(https://www.10wallpaper.com/wallpaper/1920x1080/1309/landscape_blue-Anime_HD_Wallpaper_1920x1080.jpg)"}}> </div>

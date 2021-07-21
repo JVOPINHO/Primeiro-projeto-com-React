@@ -288,6 +288,11 @@
   margin-top: 20px;
   margin-bottom:50px
 }
+
+.topic img {
+  border-radius: 10px;
+  border: 2px solid #0f0f11
+}
   
 .topic p {
   font-size:18px;
